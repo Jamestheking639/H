@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b2d">
+<meta name="description" content="SignalScope Intelligence provides evidence-led market research, competitor intelligence, and decision-ready business insights.">
+<title>SignalScope Intelligence | Research that moves decisions</title>
+<style>
+:root{--navy:#101b2d;--navy2:#172842;--ink:#18243a;--muted:#68758b;--paper:#f5f7fb;--white:#fff;--line:#e1e7f0;--blue:#4276f6;--cyan:#72d7d0;--gold:#e7bd72;--green:#177a66;--shadow:0 18px 55px rgba(20,35,60,.10);--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}.shell{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:50;background:rgba(16,27,45,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;color:#fff;font-weight:800;letter-spacing:.2px}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),#4d80ff);display:grid;place-items:center;color:var(--navy);font-weight:950;font-size:20px}.brand small{display:block;color:#aebbd0;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:650}.navlinks{display:flex;gap:6px;align-items:center}.navlinks button,.mobile-nav button{border:0;background:transparent;color:#cbd5e4;padding:10px 12px;border-radius:10px;font-size:13px;font-weight:700}.navlinks button:hover,.navlinks button.active{background:rgba(255,255,255,.09);color:#fff}.nav-cta,.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.nav-cta,.btn-primary{background:var(--cyan);color:#102238}.btn-primary:hover,.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 22px #72d7d044}.btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}.btn-dark{background:var(--navy);color:#fff}.btn-small{padding:9px 12px;font-size:13px}.menu-toggle{display:none;border:1px solid #34445c;background:transparent;color:#fff;padding:8px 11px;border-radius:10px}.mobile-nav{display:none;padding:0 0 14px;flex-wrap:wrap}.mobile-nav.open{display:flex}.mobile-nav button{border:1px solid #34445c;margin:3px}
+main{min-height:65vh}.page{display:none;animation:fade .25s ease}.page.active{display:block}@keyframes fade{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:none}}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:78px 0 72px}.hero:before{content:"";position:absolute;width:520px;height:520px;right:-130px;top:-250px;border-radius:50%;border:1px solid #ffffff16;box-shadow:0 0 0 45px #ffffff08,0 0 0 95px #ffffff05}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;position:relative}.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:2.5px;font-weight:900;text-transform:uppercase;display:flex;gap:10px;align-items:center}.eyebrow:before{content:"";width:25px;height:2px;background:currentColor}.hero h1{font-size:clamp(38px,5.5vw,66px);line-height:1.04;letter-spacing:-2.8px;margin:20px 0}.hero h1 span{color:var(--cyan)}.hero p{color:#c2cddd;font-size:17px;max-width:580px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.hero .btn-secondary{background:#ffffff0b;border-color:#ffffff2a;color:#fff}.trustline{display:flex;gap:20px;flex-wrap:wrap;color:#9faec3;font-size:12px;margin-top:26px}.trustline span:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:7px}.dashboard{background:#182a43;border:1px solid #ffffff20;border-radius:22px;padding:22px;box-shadow:0 30px 90px #0003;transform:rotate(1deg)}.dash-top{display:flex;justify-content:space-between;align-items:center;color:#d9e2ef;font-size:12px}.live-dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:var(--cyan);margin-right:7px}.dash-title{font-size:20px;font-weight:800;margin:22px 0 4px}.dash-sub{color:#9faec3;font-size:12px}.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}.metric{padding:15px;background:#ffffff08;border:1px solid #ffffff0c;border-radius:14px}.metric strong{font-size:24px;display:block;color:#fff}.metric span{font-size:11px;color:#9faec3}.bar-list{display:grid;gap:12px;margin-top:22px}.bar-label{display:flex;justify-content:space-between;font-size:11px;color:#cbd5e4;margin-bottom:5px}.bar{height:6px;background:#ffffff15;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),#4d80ff);border-radius:8px}.dash-foot{border-top:1px solid #ffffff15;margin-top:20px;padding-top:15px;color:#9faec3;font-size:11px}
+.section{padding:76px 0}.section-white{background:#fff}.section-head{max-width:680px;margin-bottom:30px}.section-head h2,.page-heading h1{font-size:clamp(29px,4vw,43px);line-height:1.12;letter-spacing:-1.4px;margin:12px 0}.section-head p,.page-heading p{color:var(--muted);font-size:16px}.kicker{color:var(--blue);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:23px;box-shadow:0 6px 22px #18243a06}.card:hover{box-shadow:var(--shadow);transform:translateY(-2px);transition:.2s}.card-icon{width:45px;height:45px;border-radius:14px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:21px;margin-bottom:18px}.card h3{margin:0 0 9px;font-size:19px;letter-spacing:-.3px}.card p{color:var(--muted);font-size:14px;margin:0 0 14px}.text-link{border:0;background:none;padding:0;color:var(--blue);font-weight:850;font-size:13px}.text-link:after{content:" →"}.stats-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}.stat{border-left:2px solid var(--cyan);padding:6px 15px}.stat strong{display:block;font-size:27px;letter-spacing:-1px}.stat span{font-size:12px;color:var(--muted)}
+.callout{background:linear-gradient(120deg,#14253d,#1c3855);border-radius:24px;padding:35px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}.callout h2{font-size:28px;line-height:1.15;margin:8px 0}.callout p{color:#c5d2e4;max-width:640px;margin:0}.page-heading{padding:56px 0 30px;background:#fff;border-bottom:1px solid var(--line)}.page-heading .shell{max-width:900px}.page-body{padding:38px 0 75px}.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 25px}.filter-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;color:#5d6a80;font-weight:750;font-size:12px}.filter-btn.active{background:var(--navy);border-color:var(--navy);color:#fff}.report-card{display:flex;flex-direction:column;min-height:260px}.report-card .report-top{display:flex;justify-content:space-between;gap:12px;align-items:start;margin-bottom:18px}.tag{font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:900;color:#2769d9;background:#eaf2ff;border-radius:7px;padding:6px 8px;display:inline-block}.tag.gold{background:#fff4dd;color:#93600c}.report-card .meta{font-size:11px;color:var(--muted);margin-top:auto;padding-top:16px;display:flex;justify-content:space-between;gap:8px}.report-card .text-link{align-self:flex-start;margin-top:15px}.notice{background:#fff8e9;border:1px solid #f2dfb8;color:#78571e;padding:13px 16px;border-radius:12px;font-size:12px;margin:18px 0}.report-detail{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,38px);box-shadow:var(--shadow);margin:20px 0}.report-detail.open{display:block;animation:fade .2s}.detail-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.close-detail{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px}.report-detail h2{font-size:clamp(25px,4vw,38px);line-height:1.12;letter-spacing:-1px;max-width:850px}.report-detail h3{margin-top:28px}.report-detail p,.report-detail li{font-size:14px;color:#4f5c70}.report-detail .lede{font-size:17px;color:#344158;max-width:850px}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.insight{background:#f3f7fc;border:1px solid #e5edf8;padding:16px;border-radius:13px}.insight strong{font-size:23px;display:block;color:#17375d}.insight span{font-size:11px;color:#5c6c81}.sources{padding-left:20px}.sources a{color:var(--blue);text-decoration:underline;overflow-wrap:anywhere}.method{background:#f5f7fb;border-radius:14px;padding:17px;margin-top:22px;font-size:12px;color:#5e6c80}
+.service-list{display:grid;gap:13px}.service-row{display:grid;grid-template-columns:65px 1fr auto;align-items:center;gap:17px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.service-row .card-icon{margin:0}.service-row p{margin:4px 0 0;color:var(--muted);font-size:13px}.service-row .price{font-weight:850;color:#20334f;font-size:13px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{padding:20px;border-top:2px solid var(--cyan);background:#fff;border-radius:0 0 14px 14px}.step .num{font-size:11px;color:var(--blue);font-weight:900;letter-spacing:1px}.step h3{font-size:16px;margin:8px 0}.step p{font-size:12px;color:var(--muted);margin:0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:13px;margin:10px 0;overflow:hidden}.faq-q{width:100%;text-align:left;padding:17px 20px;border:0;background:#fff;font-weight:800;display:flex;justify-content:space-between;gap:20px;color:var(--ink)}.faq-a{display:none;padding:0 20px 18px;color:var(--muted);font-size:14px}.faq-item.open .faq-a{display:block}.faq-item.open .faq-q span{transform:rotate(45deg)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px}.contact-panel{background:var(--navy);color:#fff;padding:27px;border-radius:20px}.contact-panel p{color:#bfcbdb;font-size:14px}.contact-point{padding:14px 0;border-bottom:1px solid #ffffff1b}.contact-point strong{display:block;font-size:13px}.contact-point span{color:#b8c6d8;font-size:12px}.form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px}.field{display:grid;gap:6px;margin-bottom:15px}.field label{font-size:12px;font-weight:850;color:#35425a}.field input,.field select,.field textarea{width:100%;border:1px solid #d9e1ed;background:#fbfcfe;border-radius:10px;padding:12px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #4276f61a}.field textarea{min-height:125px;resize:vertical}.form-note{font-size:11px;color:var(--muted);margin-top:12px}
+.footer{background:#0b1423;color:#c4cede;padding:45px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}.footer p{font-size:13px;color:#9eabc0;max-width:390px}.footer h4{color:#fff;margin:0 0 12px}.footer .footlink{display:block;border:0;background:none;padding:5px 0;color:#aebbd0;font-size:13px;text-align:left}.footer-bottom{border-top:1px solid #ffffff16;margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px;color:#8594ab}
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:#091321c9;display:none;align-items:center;justify-content:center;padding:20px}.modal-backdrop.open{display:flex}.modal{width:min(560px,100%);background:#fff;border-radius:20px;padding:28px;max-height:85vh;overflow:auto}.modal h2{margin-top:0}.modal p{font-size:14px;color:var(--muted)}.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:120;background:var(--navy);color:#fff;padding:12px 18px;border-radius:12px;box-shadow:var(--shadow);font-size:13px;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.navlinks{display:none}.menu-toggle{display:block}.hero-grid{grid-template-columns:1fr;gap:38px}.dashboard{max-width:570px;transform:none}.grid-3{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:560px){.hero{padding:55px 0}.hero h1{letter-spacing:-1.8px}.section{padding:54px 0}.grid-3,.grid-2,.stats-strip,.insight-grid{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.callout{display:block;padding:25px}.callout .btn{margin-top:20px}.service-row{grid-template-columns:48px 1fr;gap:12px;padding:15px}.service-row .price{grid-column:2}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.detail-head{display:block}.close-detail{margin-top:5px}.hero-actions .btn{width:100%}.trustline{gap:10px}.page-heading{padding:42px 0 25px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="shell nav">
+    <a class="brand" href="#" onclick="showPage('home');return false" aria-label="SignalScope home">
+      <span class="brand-mark">S</span><span>SignalScope <small>Intelligence</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <button data-page="home" class="active">Home</button><button data-page="services">Services</button><button data-page="reports">Reports</button><button data-page="about">About & FAQ</button><button data-page="contact">Contact</button>
+    </nav>
+    <button class="nav-cta" onclick="showPage('contact')">Discuss a project ↗</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" onclick="toggleMobile()">☰</button>
+  </div>
+  <nav class="shell mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button data-page="home">Home</button><button data-page="services">Services</button><button data-page="reports">Reports</button><button data-page="about">About & FAQ</button><button data-page="contact">Contact</button>
+  </nav>
+</header>
+<main>
+<section class="page active" id="page-home">
+  <div class="hero"><div class="shell hero-grid">
+    <div>
+      <div class="eyebrow">Independent business research</div>
+      <h1>See the market.<br><span>Understand the signal.</span></h1>
+      <p>Evidence-led market research and competitor intelligence for teams making their next important decision. Clear findings, traceable sources, and practical implications — without the noise.</p>
+      <div class="hero-actions"><button class="btn btn-primary" onclick="showPage('contact')">Discuss your research needs ↗</button><button class="btn btn-secondary" onclick="showPage('reports')">Explore sample briefs ↓</button></div>
+      <div class="trustline"><span>Source-led analysis</span><span>Custom research scopes</span><span>Global perspective</span></div>
+    </div>
+    <div class="dashboard" aria-label="Illustrative research dashboard">
+      <div class="dash-top"><span><i class="live-dot"></i>RESEARCH SNAPSHOT</span><span>DEMO VIEW</span></div>
+      <div class="dash-title">From information to insight</div><div class="dash-sub">A sample of how we structure a research question.</div>
+      <div class="metric-grid"><div class="metric"><strong>01</strong><span>Decision question</span></div><div class="metric"><strong>02</strong><span>Evidence review</span></div><div class="metric"><strong>03</strong><span>Competitive context</span></div><div class="metric"><strong>04</strong><span>Actionable options</span></div></div>
+      <div class="bar-list"><div><div class="bar-label"><span>Market context</span><span>Map</span></div><div class="bar"><i style="width:88%"></i></div></div><div><div class="bar-label"><span>Competitor landscape</span><span>Compare</span></div><div class="bar"><i style="width:72%"></i></div></div><div><div class="bar-label"><span>Opportunity assessment</span><span>Prioritise</span></div><div class="bar"><i style="width:61%"></i></div></div></div>
+      <div class="dash-foot">Illustrative interface only — not client data or a measured score.</div>
+    </div>
+  </div></div>
+  <div class="section section-white"><div class="shell">
+    <div class="section-head"><div class="kicker">What we do</div><h2>Research built around decisions, not just data.</h2><p>We organise public evidence into clear, useful analysis so businesses can understand their options and ask better questions.</p></div>
+    <div class="grid-3">
+      <article class="card"><div class="card-icon">⌕</div><h3>Market & industry research</h3><p>Understand market structure, adoption signals, customer needs, and the factors shaping an industry.</p><button class="text-link" onclick="showPage('services')">Explore service</button></article>
+      <article class="card"><div class="card-icon">⇄</div><h3>Competitor intelligence</h3><p>Compare positioning, product features, target segments, pricing signals, and strategic differences.</p><button class="text-link" onclick="showPage('services')">Explore service</button></article>
+      <article class="card"><div class="card-icon">◎</div><h3>Custom research projects</h3><p>Get a scoped brief focused on a specific market, product category, business question, or decision.</p><button class="text-link" onclick="showPage('contact')">Discuss a project</button></article>
+    </div>
+    <div class="stats-strip"><div class="stat"><strong>7</strong><span>Industry areas covered</span></div><div class="stat"><strong>Evidence-first</strong><span>Sources linked wherever practical</span></div><div class="stat"><strong>Custom</strong><span>Scope matched to your question</span></div></div>
+  </div></div>
+  <div class="section"><div class="shell">
+    <div class="section-head"><div class="kicker">Featured research</div><h2>Start with a sample brief.</h2><p>Explore concise demonstrations of our research approach. These are public-source desk-research samples, not commissioned client reports.</p></div>
+    <div class="grid-3">
+      <article class="card"><span class="tag">AI & SaaS</span><h3>AI adoption: investment is not the same as value</h3><p>What AI investment and reported adoption figures can — and cannot — tell business decision-makers.</p><button class="text-link" onclick="openReport('ai')">Read sample brief</button></article>
+      <article class="card"><span class="tag gold">Cybersecurity</span><h3>Security spending: follow the changing risk</h3><p>How spending forecasts point to sustained demand while budgets still require prioritisation.</p><button class="text-link" onclick="openReport('cyber')">Read sample brief</button></article>
+      <article class="card"><span class="tag">Clean technology</span><h3>Renewables: capacity growth creates adjacent opportunities</h3><p>What record renewable additions may mean for suppliers, grid services, and project execution.</p><button class="text-link" onclick="openReport('renewables')">Read sample brief</button></article>
+    </div>
+    <div style="margin-top:20px"><button class="btn btn-dark" onclick="showPage('reports')">View all sample briefs →</button></div>
+  </div></div>
+  <div class="section section-white"><div class="shell"><div class="callout"><div><div class="eyebrow">Have a research question?</div><h2>Make your next decision with a clearer view.</h2><p>Tell us what you're trying to understand. We'll discuss scope, deliverables, evidence requirements, timeline, and price before any commitment.</p></div><button class="btn btn-primary" onclick="showPage('contact')">Start a conversation ↗</button></div></div></div>
+</section>
+
+<section class="page" id="page-services">
+  <div class="page-heading"><div class="shell"><div class="kicker">Services</div><h1>Research for the question in front of you.</h1><p>Choose a defined research service or ask for a custom scope. The final deliverables and price are agreed before work begins.</p></div></div>
+  <div class="page-body"><div class="shell">
+    <div class="service-list">
+      <div class="service-row"><div class="card-icon">⌕</div><div><h3>Market & industry research</h3><p>Market structure, demand signals, adoption trends, regulation context, and key uncertainties.</p></div><div class="price">Custom quote</div></div>
+      <div class="service-row"><div class="card-icon">⇄</div><div><h3>Competitor analysis</h3><p>Side-by-side competitor profiles, positioning, product scope, pricing signals, and differentiation.</p></div><div class="price">Custom quote</div></div>
+      <div class="service-row"><div class="card-icon">◈</div><div><h3>Product & category intelligence</h3><p>Map a category, compare alternatives, identify unmet needs, and summarise relevant product moves.</p></div><div class="price">Custom quote</div></div>
+      <div class="service-row"><div class="card-icon">↗</div><div><h3>Opportunity & market-entry brief</h3><p>Initial screening of target markets, barriers, customer segments, competitors, and questions for validation.</p></div><div class="price">Custom quote</div></div>
+      <div class="service-row"><div class="card-icon">✎</div><div><h3>Custom research project</h3><p>A tailored report based on your decision, target geography, depth, deadline, and source requirements.</p></div><div class="price">Agreed in advance</div></div>
+    </div>
+    <div class="section-head" style="margin-top:58px"><div class="kicker">Our process</div><h2>Clear expectations before research starts.</h2></div>
+    <div class="process"><div class="step"><div class="num">STEP 01</div><h3>Define the question</h3><p>Clarify the decision, target market, audience, and key questions.</p></div><div class="step"><div class="num">STEP 02</div><h3>Agree the scope</h3><p>Confirm deliverables, limitations, timeline, price, and payment terms.</p></div><div class="step"><div class="num">STEP 03</div><h3>Review evidence</h3><p>Use credible public sources and distinguish facts from interpretation.</p></div><div class="step"><div class="num">STEP 04</div><h3>Deliver findings</h3><p>Receive a structured report with key findings, implications, and sources.</p></div></div>
+    <div class="notice"><strong>Scope and quality:</strong> Research depends on the availability and reliability of public information. We disclose important gaps and do not guarantee commercial outcomes. Correction, cancellation, and refund terms are agreed in writing for each project.</div>
+    <button class="btn btn-primary" onclick="showPage('contact')">Request a project discussion ↗</button>
+  </div></div>
+</section>
+
+<section class="page" id="page-reports">
+  <div class="page-heading"><div class="shell"><div class="kicker">Research library</div><h1>Sample briefs & research previews.</h1><p>Explore the way we frame a question, examine evidence, and translate findings into business implications.</p></div></div>
+  <div class="page-body"><div class="shell">
+    <div class="notice"><strong>Transparency note:</strong> The reports below are short public-source demonstration briefs created for this website. They are not full commercial reports, do not contain proprietary client data, and should not be interpreted as investment, legal, medical, or cybersecurity advice. Dates and forecasts are stated in context; always check the original source for updates.</div>
+    <div class="filter-row" id="filters"><button class="filter-btn active" data-filter="all">All samples</button><button class="filter-btn" data-filter="technology">Technology, AI & SaaS</button><button class="filter-btn" data-filter="cyber">Cybersecurity & IT</button><button class="filter-btn" data-filter="renewables">Renewables & clean tech</button><button class="filter-btn" data-filter="ecommerce">E-commerce & retail</button></div>
+    <div class="grid-3" id="reportGrid">
+      <article class="card report-card" data-sector="technology"><div class="report-top"><span class="tag">Technology</span><span style="font-size:11px;color:#7a879b">Brief 01</span></div><h3>AI adoption: investment is not the same as value</h3><p>Signals from corporate investment and reported adoption — and the questions businesses should ask before scaling.</p><div class="meta"><span>Public-source desk research</span><span>5–7 min</span></div><button class="text-link" onclick="openReport('ai')">Read brief</button></article>
+      <article class="card report-card" data-sector="cyber"><div class="report-top"><span class="tag gold">Cybersecurity</span><span style="font-size:11px;color:#7a879b">Brief 02</span></div><h3>Security spending: follow the changing risk</h3><p>Interpreting Gartner's forecast and identifying where a headline spending number can mislead.</p><div class="meta"><span>Public-source desk research</span><span>5–7 min</span></div><button class="text-link" onclick="openReport('cyber')">Read brief</button></article>
+      <article class="card report-card" data-sector="renewables"><div class="report-top"><span class="tag">Clean technology</span><span style="font-size:11px;color:#7a879b">Brief 03</span></div><h3>Renewables: capacity growth creates adjacent opportunities</h3><p>Record additions and their implications for supply chains, grid flexibility, and project delivery.</p><div class="meta"><span>Public-source desk research</span><span>5–7 min</span></div><button class="text-link" onclick="openReport('renewables')">Read brief</button></article>
+      <article class="card report-card" data-sector="ecommerce"><div class="report-top"><span class="tag gold">E-commerce</span><span style="font-size:11px;color:#7a879b">Brief 04</span></div><h3>E-commerce scale: a huge market is not one market</h3><p>What global business e-commerce figures say about scale, and what they do not reveal about a specific niche.</p><div class="meta"><span>Public-source desk research</span><span>5–7 min</span></div><button class="text-link" onclick="openReport('ecommerce')">Read brief</button></article>
+    </div>
+    <div class="report-detail" id="reportDetail" aria-live="polite"></div>
+    <div class="section-head" style="margin-top:50px"><div class="kicker">More sectors</div><h2>Research coverage can extend across seven industry areas.</h2><p>These are areas we can scope research in — not a claim that every sector already has a completed full-length report.</p></div>
+    <div class="grid-3">
+      <article class="card"><div class="card-icon">✦</div><h3>Technology, AI & SaaS</h3><p>AI adoption, software categories, product comparisons, developer tools, and business models.</p></article>
+      <article class="card"><div class="card-icon">⬡</div><h3>Cybersecurity & IT services</h3><p>Security spending, service categories, cloud risk, vendor positioning, and buyer needs.</p></article>
+      <article class="card"><div class="card-icon">◉</div><h3>Financial services & fintech</h3><p>Digital payments, fintech business models, financial inclusion, and regulatory context.</p></article>
+      <article class="card"><div class="card-icon">▤</div><h3>E-commerce & consumer</h3><p>Retail channels, consumer brands, online commerce, customer journeys, and logistics.</p></article>
+      <article class="card"><div class="card-icon">＋</div><h3>Healthcare & HealthTech</h3><p>Health technology adoption, care delivery models, and publicly documented market developments.</p></article>
+      <article class="card"><div class="card-icon">☼</div><h3>Renewable energy & clean tech</h3><p>Renewable deployment, storage, grid services, project supply chains, and transition technology.</p></article>
+      <article class="card"><div class="card-icon">⇢</div><h3>Logistics & mobility</h3><p>Supply-chain visibility, delivery models, mobility services, and operational technology.</p></article>
+    </div>
+    <div class="callout" style="margin-top:42px"><div><div class="eyebrow">Need a specific answer?</div><h2>Commission research around your question.</h2><p>We can agree on the target market, comparison set, deliverables, and research depth before work begins.</p></div><button class="btn btn-primary" onclick="showPage('contact')">Request a custom brief ↗</button></div>
+  </div></div>
+</section>
+
+<section class="page" id="page-about">
+  <div class="page-heading"><div class="shell"><div class="kicker">About SignalScope</div><h1>Clear evidence. Careful interpretation. Useful next steps.</h1><p>SignalScope Intelligence is an independent research initiative focused on helping businesses make better-informed decisions through structured public-source research.</p></div></div>
+  <div class="page-body"><div class="shell">
+    <div class="grid-2">
+      <article class="card"><div class="card-icon">⌕</div><h3>Our approach</h3><p>We start with the decision a reader needs to make, collect relevant public evidence, compare sources, identify uncertainty, and present implications in plain language.</p></article>
+      <article class="card"><div class="card-icon">◈</div><h3>Our principles</h3><p>We aim to be transparent about sources, distinguish published facts from our analysis, state limitations, and avoid presenting estimates as certainty.</p></article>
+    </div>
+    <div class="section-head" style="margin-top:45px"><div class="kicker">Frequently asked questions</div><h2>Good to know before starting.</h2></div>
+    <div id="faqs">
+      <div class="faq-item"><button class="faq-q">Are the reports on this site full commercial reports? <span>＋</span></button><div class="faq-a">No. The current library contains short public-source demonstration briefs. A full custom report would have a separately agreed scope, depth, deliverables, and price.</div></div>
+      <div class="faq-item"><button class="faq-q">Can you research a company or market not listed here? <span>＋</span></button><div class="faq-a">Yes, subject to scope and the availability of credible information. Share the question, target geography, competitors or category, and deadline so feasibility can be assessed.</div></div>
+      <div class="faq-item"><button class="faq-q">How do you handle sources? <span>＋</span></button><div class="faq-a">Demonstration briefs link to public sources. For commissioned work, source selection and citation depth are agreed as part of the scope. Some claims may remain uncertain or unavailable in public data.</div></div>
+      <div class="faq-item"><button class="faq-q">Do you guarantee that research will lead to a profitable decision? <span>＋</span></button><div class="faq-a">No. Research can inform a decision, but market outcomes depend on many factors outside a research provider's control. We do not guarantee revenue, investment returns, or business results.</div></div>
+      <div class="faq-item"><button class="faq-q">What about payment, cancellations, and refunds? <span>＋</span></button><div class="faq-a">Payment milestones, delivery timing, revision limits, cancellation terms, and any applicable refund conditions are agreed in writing before a paid project begins. We do not use an unlimited “refund if you are not interested” promise after delivery.</div></div>
+      <div class="faq-item"><button class="faq-q">Can I buy a report directly from the website? <span>＋</span></button><div class="faq-a">The current version is set up to receive custom research enquiries. When your Payhip store is ready, add your actual store or product URLs in the configuration near the bottom of this file before activating purchase links.</div></div>
+    </div>
+  </div></div>
+</section>
+
+<section class="page" id="page-contact">
+  <div class="page-heading"><div class="shell"><div class="kicker">Contact</div><h1>Tell us what you need to understand.</h1><p>Share the business question, target market, and decision you're working toward. We'll respond with a proposed scope before any paid work starts.</p></div></div>
+  <div class="page-body"><div class="shell contact-grid">
+    <div class="contact-panel"><div class="eyebrow">Start a conversation</div><h2 style="font-size:28px;line-height:1.15">A clear brief makes better research.</h2><p>Useful details include the target geography, competitors or category, deadline, and what you want the research to help you decide.</p>
+      <div class="contact-point"><strong>Research focus</strong><span>Market research · Competitor intelligence · Custom briefs</span></div>
+      <div class="contact-point"><strong>Working style</strong><span>Scope first · Sources documented · Deliverables agreed</span></div>
+      <div class="contact-point"><strong>Response expectation</strong><span>We'll confirm whether the request is within scope before quoting.</span></div>
+      <p style="font-size:11px;margin-top:20px">Before launch: replace the placeholder contact email in the configuration at the bottom of this file with your real business email.</p>
+    </div>
+    <form class="form-card" id="contactForm">
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div>
+      <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" required placeholder="you@company.com"></div>
+      <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Market and industry research</option><option>Competitor analysis</option><option>Product and category intelligence</option><option>Market-entry opportunity brief</option><option>Custom research project</option><option>Question about a sample report</option></select></div>
+      <div class="field"><label for="budget">Indicative budget (optional)</label><select id="budget" name="budget"><option>Not decided yet</option><option>Under $100</option><option>$100–$300</option><option>$300–$750</option><option>$750+</option></select></div>
+      <div class="field"><label for="message">Research question and context</label><textarea id="message" name="message" required placeholder="What market or competitors should be researched? What decision will the findings support?"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Prepare enquiry email ↗</button>
+      <div class="form-note">This form opens your email app with a prepared message. It does not send or store data on this website.</div>
+    </form>
+  </div></div>
+</section>
+</main>
+
+<footer class="footer"><div class="shell">
+  <div class="footer-grid">
+    <div><a class="brand" href="#" onclick="showPage('home');return false"><span class="brand-mark">S</span><span>SignalScope <small>Intelligence</small></span></a><p>Independent research for clearer business decisions. Evidence-led analysis, transparent limitations, and practical implications.</p></div>
+    <div><h4>Explore</h4><button class="footlink" onclick="showPage('services')">Services</button><button class="footlink" onclick="showPage('reports')">Sample reports</button><button class="footlink" onclick="showPage('about')">About & FAQ</button></div>
+    <div><h4>Start a project</h4><p>Have a market or competitor question?</p><button class="btn btn-primary btn-small" onclick="showPage('contact')">Contact SignalScope ↗</button></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> SignalScope Intelligence. All rights reserved.</span><span>Research is informational and does not guarantee business outcomes.</span></div>
+</div></footer>
+
+<div class="modal-backdrop" id="payhipModal" role="dialog" aria-modal="true" aria-labelledby="payhipTitle"><div class="modal"><h2 id="payhipTitle">Paid report checkout isn't connected yet</h2><p>This website can link to your Payhip products, but your actual store or product URL must be added first. Don't send customers to a generic checkout page.</p><div class="modal-actions"><button class="btn btn-dark" onclick="closePayhip()">Close</button><button class="btn btn-primary" onclick="showPage('contact');closePayhip()">Ask about a custom report</button></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===================== CONFIGURATION: EDIT BEFORE LAUNCH =====================
+   1) CONTACT_EMAIL: replace with an email address you control.
+   2) PAYHIP_URLS: paste your actual Payhip store/product links when ready.
+   3) Do not advertise a paid report as purchasable until its checkout URL works.
+============================================================================= */
+const CONTACT_EMAIL = "REPLACE-WITH-YOUR-EMAIL@example.com";
+const PAYHIP_URLS = {
+  ai: "",
+  cyber: "",
+  renewables: "",
+  ecommerce: ""
+};
+
+const reports = {
+  ai: {
+    sector:"Technology, AI & SaaS", label:"Sample brief 01", title:"AI adoption: investment is not the same as value",
+    updated:"Evidence published in 2025; read as a dated snapshot",
+    lede:"AI investment and reported business adoption have both grown rapidly. For a business deciding where to deploy AI, the more useful question is not simply whether the market is growing — it is where a specific use case can create measurable value after costs, risks, and workflow changes are considered.",
+    metrics:[["$252.3B","Corporate AI investment reported for 2024 in Stanford HAI's 2025 AI Index"],["78%","Surveyed organizations reported using AI in 2024, up from 55% in 2023"],["71%","Survey respondents reporting generative AI use in at least one business function in 2024, up from 33% in 2023"]],
+    sections:[
+      ["What the evidence says","Stanford HAI's 2025 AI Index reported $252.3 billion in corporate AI investment during 2024. Its survey summary also reported that 78% of organizations used AI in 2024, compared with 55% in 2023. For generative AI in at least one business function, the reported share rose from 33% to 71%. These measures describe investment and reported adoption; they do not independently prove that every adopter achieved positive returns."],
+      ["What it may mean for buyers","Adoption growth can increase the number of available tools, suppliers, and implementation partners. It can also make vendor claims harder to compare. A buyer should define a use case, establish a baseline, compare the full cost of deployment, and test the outcome before expanding. General adoption statistics are context, not a substitute for a company-specific business case."],
+      ["Questions worth investigating","Which workflow is expensive, slow, repetitive, or quality-constrained? What does the current process cost? What data can be used safely? How will errors be detected? What human review is required? Can the tool be tested on a narrow workflow before a wider rollout? What happens if the vendor changes pricing or product capabilities?"],
+      ["Commercial implications","For AI software providers, differentiation may depend on solving a specific workflow reliably rather than merely offering a general-purpose model. For buyers, procurement should compare integration effort, privacy and security controls, support, evaluation methods, and exit options — not just headline model capability."],
+      ["Limits and uncertainty","The cited figures are historical, survey-based, and aggregate. Definitions of AI use vary, and reported adoption is not the same as regular use, successful implementation, or realised financial return. The sample does not estimate the size of any individual market or predict a company's revenue."]
+    ],
+    sources:[["Stanford HAI — The 2025 AI Index, Economy chapter","https://hai.stanford.edu/ai-index/2025-ai-index-report/economy"],["Stanford HAI — AI Index 2025 overview","https://hai.stanford.edu/ai-index/2025-ai-index-report"]],
+    takeaway:"Decision takeaway: assess AI opportunities at the workflow level. Measure a defined outcome, total implementation cost, error rate, and adoption by the people who will use it before scaling."
+  },
+  cyber: {
+    sector:"Cybersecurity & IT Services", label:"Sample brief 02", title:"Security spending: follow the changing risk",
+    updated:"Gartner forecast published 29 July 2025",
+    lede:"Cybersecurity spending forecasts indicate a large and growing global category, but an expanding market does not mean every product or service will grow equally. Buyers and vendors need to understand which risk, compliance requirement, or operational gap is driving a purchase.",
+    metrics:[["$213B","Gartner's worldwide information-security end-user spending forecast for 2025"],["$193.4B","Gartner's estimated worldwide spending total for 2024"],["12.5%","Gartner's projected growth rate for 2026 in the July 2025 forecast"]],
+    sections:[
+      ["What the evidence says","Gartner's 29 July 2025 release forecast worldwide end-user spending on information security at approximately $213.0 billion in 2025, up from an estimated $193.4 billion in 2024. The same release projected 12.5% growth in 2026, to about $239.8 billion. These are analyst forecasts, not final audited spending totals."],
+      ["Why the headline needs context","The total combines different categories, including security software, security services, and network security. The July 2025 table put 2025 security software spending at about $105.9 billion and security services at about $83.8 billion. Different segments have different buying processes, margins, competitive dynamics, and implementation requirements. A total-market number alone cannot identify the best niche."],
+      ["Buyer implications","Organisations should map security investments to actual exposure, business criticality, regulatory obligations, and the ability to operate a tool effectively. The least expensive product may not reduce the most important risk; the most feature-rich product may be unnecessary for a smaller organisation. Procurement should consider integration, staff capacity, incident response, and ongoing maintenance."],
+      ["Vendor and service-provider implications","A credible market-entry analysis should narrow the customer segment and use case. For example, cloud migration, identity management, managed security services, data protection, and incident response address different needs. A supplier should substantiate claims with clear scope, measurable service levels, and evidence that the product fits the buyer's environment."],
+      ["Limits and uncertainty","The figures are Gartner forecasts available in July 2025 and may be revised. Spending categories are not the same as profit pools, customer satisfaction, or accessible revenue for a new entrant. This brief does not rank vendors or prescribe security controls for a specific organisation."]
+    ],
+    sources:[["Gartner — Worldwide information-security spending forecast, 29 July 2025","https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025"]],
+    takeaway:"Decision takeaway: segment the market by buyer, risk, and use case before estimating an opportunity. Treat global spending forecasts as context, then validate actual demand with customer interviews and segment-specific evidence."
+  },
+  renewables: {
+    sector:"Renewable Energy & Clean Technology", label:"Sample brief 03", title:"Renewables: capacity growth creates adjacent opportunities",
+    updated:"IEA Global Energy Review 2025; data for 2024",
+    lede:"Rapid renewable capacity additions create opportunities beyond generating equipment itself. Grid connections, storage, power management, maintenance, project delivery, and reliable supply chains can all become important — but the attractiveness of each opportunity depends heavily on local infrastructure, policy, and project economics.",
+    metrics:[["~700 GW","Estimated global renewable capacity additions in 2024"],["~550 GW","Solar PV additions in 2024, according to the IEA review"],["95%","Share of 2024 renewable capacity growth represented by solar PV and wind together"]],
+    sections:[
+      ["What the evidence says","The International Energy Agency's Global Energy Review 2025 estimated that global renewable capacity additions rose about 25% in 2024 to around 700 gigawatts. Solar photovoltaic capacity accounted for more than three-quarters of additions, at about 550 GW; wind added around 120 GW. Solar and wind together represented 95% of renewable capacity growth in the review."],
+      ["Where adjacent needs may emerge","More generation capacity can increase the importance of grid connections, transmission and distribution upgrades, balancing, forecasting, storage, operations and maintenance, and project execution. These are potential areas for investigation, not proof that each is underserved in every country. Local grid constraints, procurement rules, financing, and skills availability determine what can be delivered."],
+      ["Questions for market entrants","Which geography has a visible project pipeline? Who pays: utilities, project developers, commercial customers, or governments? What permitting, interconnection, and certification rules apply? Is demand recurring or tied to a small number of large projects? Which suppliers already serve the market? What working capital and technical qualifications are required?"],
+      ["Commercial implications","A new entrant may find a more achievable opening in a narrowly defined service or supply-chain role than in capital-intensive generation development. However, the opportunity must be tested against local competitors, project timelines, payment risk, equipment requirements, and the reliability of policy support."],
+      ["Limits and uncertainty","Capacity additions measure new power capacity, not electricity actually generated, profitability, project completion quality, or local customer demand. The IEA figures include estimates and should not be treated as a country-level market size. Any investment or market-entry decision needs further local research."]
+    ],
+    sources:[["International Energy Agency — Global Energy Review 2025: Electricity","https://www.iea.org/reports/global-energy-review-2025/electricity"],["International Energy Agency — Renewables 2025","https://www.iea.org/reports/renewables-2025/renewable-electricity"]],
+    takeaway:"Decision takeaway: look beyond headline renewable capacity growth. Screen adjacent services by geography, project pipeline, grid constraints, buyer type, and the practical barriers to delivering work."
+  },
+  ecommerce: {
+    sector:"E-commerce, Retail & Consumer Brands", label:"Sample brief 04", title:"E-commerce scale: a huge market is not one market",
+    updated:"UNCTAD Digital Economy Report 2024; historical data through 2022",
+    lede:"Global business e-commerce figures demonstrate the scale of digital commerce, but they can mislead if used as a direct estimate of a specific country's online retail opportunity. A useful market assessment separates business-to-business and business-to-consumer activity, domestic and cross-border sales, and the economics of the target category.",
+    metrics:[["$27T","UNCTAD's reported business e-commerce sales for 43 economies in 2022"],["$17T","Comparable reported sales for those economies in 2016"],["43","Economies covered by the cited UNCTAD estimate"]],
+    sections:[
+      ["What the evidence says","UNCTAD's Digital Economy Report 2024 overview states that business e-commerce sales across 43 developed and developing economies with available data rose from $17 trillion in 2016 to $27 trillion in 2022. The estimate covers business e-commerce broadly; it is not a measure of online retail sales alone and does not cover every economy."],
+      ["Why category definitions matter","A business selling industrial components, a consumer clothing brand, a marketplace, and a grocery delivery service face very different order values, repeat rates, returns, fulfilment needs, and customer acquisition costs. A broad global total may be useful background but is too aggregated to set a realistic revenue target for one niche."],
+      ["A more useful market-sizing method","Define the geography, product category, customer type, and channel. Then estimate the reachable customer base, realistic purchase frequency, average order value, gross margin, fulfilment and return costs, and likely acquisition cost. Use bottom-up estimates and compare them with independent industry data where available."],
+      ["Commercial implications","Retailers should investigate trust, delivery reliability, payment preferences, product information, customer support, and returns alongside website conversion. For service providers, a clear offer such as checkout improvement, product-page optimisation, or fulfilment analysis is easier to assess than a promise to improve e-commerce performance generally."],
+      ["Limits and uncertainty","The cited sales figures end in 2022 and are based on 43 economies with available data. They are not a current 2026 estimate, do not isolate consumer e-commerce, and should not be extrapolated mechanically to an individual market."]
+    ],
+    sources:[["UNCTAD — Digital Economy Report 2024 overview (PDF)","https://unctad.org/system/files/official-document/der2024_overview_en.pdf"],["UNCTAD — Digital Economy Report 2024","https://unctad.org/topic/ecommerce-and-digital-economy/digital-economy-report"]],
+    takeaway:"Decision takeaway: use global e-commerce figures to establish context, then size the actual opportunity from a defined customer segment, geography, channel, and unit economics."
+  }
+};
+
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const page=document.getElementById('page-'+name);
+  if(page) page.classList.add('active');
+  document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===name));
+  document.getElementById('mobileNav').classList.remove('open');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(name!=='reports') closeReport();
+}
+function toggleMobile(){document.getElementById('mobileNav').classList.toggle('open')}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+function openReport(id){
+  const r=reports[id]; if(!r) return;
+  showPage('reports');
+  const el=document.getElementById('reportDetail');
+  el.innerHTML=`
+    <div class="detail-head"><div><span class="tag">${escapeHTML(r.label)} · ${escapeHTML(r.sector)}</span><p style="font-size:11px;color:#77849a;margin:10px 0 0">${escapeHTML(r.updated)}</p></div><button class="close-detail" onclick="closeReport()">Close ✕</button></div>
+    <h2>${escapeHTML(r.title)}</h2><p class="lede">${escapeHTML(r.lede)}</p>
+    <div class="insight-grid">${r.metrics.map(m=>`<div class="insight"><strong>${escapeHTML(m[0])}</strong><span>${escapeHTML(m[1])}</span></div>`).join('')}</div>
+    ${r.sections.map(s=>`<h3>${escapeHTML(s[0])}</h3><p>${escapeHTML(s[1])}</p>`).join('')}
+    <div class="method"><strong>Key takeaway</strong><br>${escapeHTML(r.takeaway)}<br><br><strong>Method note:</strong> This is a concise public-source desk-research sample. Figures are reproduced in context from the cited sources; interpretation is analytical and may require further validation for a real commercial decision.</div>
+    <h3>Sources & further reading</h3><ol class="sources">${r.sources.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener noreferrer">${escapeHTML(s[0])}</a></li>`).join('')}</ol>
+    <div style="margin-top:25px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-primary" onclick="showPage('contact');document.getElementById('service').value='Custom research project';document.getElementById('message').value='I would like to discuss a custom research project related to: ${escapeHTML(r.title)}.'">Request related research ↗</button><button class="btn btn-secondary" onclick="copyReportSummary('${id}')">Copy brief summary</button></div>`;
+  el.classList.add('open');
+  setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),50);
+}
+function closeReport(){const el=document.getElementById('reportDetail');if(el){el.classList.remove('open');el.innerHTML=''}}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function copyReportSummary(id){
+  const r=reports[id];const txt=r.title+"\n\n"+r.lede+"\n\n"+r.takeaway+"\n\nSources:\n"+r.sources.map(s=>s[0]+": "+s[1]).join("\n");
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(()=>toast('Brief summary copied.')).catch(()=>fallbackCopy(txt))}
+  else fallbackCopy(txt);
+}
+function fallbackCopy(txt){const t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand('copy');toast('Brief summary copied.')}catch(e){toast('Copy unavailable on this browser.')}t.remove()}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));
+  document.querySelectorAll('.report-card').forEach(card=>card.style.display=(b.dataset.filter==='all'||card.dataset.sector===b.dataset.filter)?'flex':'none');
+  closeReport();
+}));
+document.querySelectorAll('.faq-q').forEach(b=>b.addEventListener('click',()=>b.parentElement.classList.toggle('open')));
+function closePayhip(){document.getElementById('payhipModal').classList.remove('open')}
+function buyReport(id){
+  const url=PAYHIP_URLS[id];
+  if(url){window.open(url,'_blank','noopener,noreferrer')}
+  else document.getElementById('payhipModal').classList.add('open');
+}
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  if(CONTACT_EMAIL.includes('REPLACE-WITH-YOUR-EMAIL')){toast('Add your real contact email in the configuration before launch.');return}
+  const d=new FormData(this);
+  const subject=encodeURIComponent('SignalScope research enquiry — '+d.get('service'));
+  const body=encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nService: '+d.get('service')+'\nIndicative budget: '+d.get('budget')+'\n\nResearch question:\n'+d.get('message'));
+  window.location.href='mailto:'+CONTACT_EMAIL+'?subject='+subject+'&body='+body;
+});
+document.getElementById('payhipModal').addEventListener('click',e=>{if(e.target.id==='payhipModal')closePayhip()});
+</script>
+</body>
+</html>
